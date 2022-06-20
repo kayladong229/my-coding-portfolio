@@ -1,0 +1,222 @@
+:root {
+    --header-dark: black;
+    --header-light: white;
+    --label-color: red;
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:blanchedalmond;
+}
+
+body {
+    margin: 0 0 3px 0;
+}
+
+header {
+    background-color: var(--header-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 32px;
+    background-color: var(--header-dark);
+    color: var(--header-light);
+    text-align: center;
+    margin-left: 10px;
+}
+
+header nav {
+    background-color: var(--header-dark);
+}
+
+header nav a {
+    background-color: var(--header-dark);
+    color: var(--header-light);
+    margin: 4px;
+    display: inline;
+    padding-right: 10px;
+}
+
+header nav a::before {
+    content: "🔵";
+    display: inline-block;
+    margin: 2px;
+}
+
+header nav a:hover {
+    color: violet;
+}
+
+img {
+    height: 150px;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+main {
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    flex: 1 1 auto;
+    max-width: 950px;
+    border: 2px solid gray;
+    margin: 15px;
+}
+
+main section h2 {
+    margin: 0 auto;
+    width: 100%;
+    background-color: cyan;
+    text-align: center;
+}
+
+main section figure:hover {
+    opacity: 70%;
+}
+
+
+.card-main {
+    position: relative;
+}
+
+.card-main img{
+    height: 400px;
+    width: 800px;
+    border: 5px solid red;
+}
+
+.label-main {
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    color: black;
+}
+
+.card-1, .card-2 {
+    position: relative;
+}
+
+.card-1 img, .card-2 img {
+    height: 271px;
+    border: 3px solid red;
+    float: left;
+    margin: 26px;
+    align-items: center;
+}
+
+.label-1, .label-2 {
+    position: absolute;
+    bottom: -280px;
+    color: black;
+}
+
+.label-1 {
+    left: 29px;
+}
+
+.label-2 {
+    left: 448px;
+}
+
+
+h3, .label-main, .label-1, .label-2 {
+    background-color: var(--label-color);
+}
+
+.contact-info a {
+    margin: 3px 0;
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.about-me p {
+    text-align: center;
+} 
+
+@media screen and (max-width: 992px) {
+header, body img, main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    }
+
+header nav {
+    padding-bottom: 5px;
+}
+
+body img {
+    display: block;
+    height: 300px;
+    margin: 20px auto;
+}
+
+main {
+    width: 100%;
+}
+
+.about-me p {
+    flex-wrap: wrap;
+}
+
+.my-work {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.card-main img {
+    flex: 1 1 auto;
+    max-width: 550px;
+    height: 310px;
+}
+
+.label-main {
+    position: absolute;
+    left: 5px;
+    color: black;
+}
+
+.card-1 img, .card-2 img {
+    flex: 1 1 auto;
+    max-width: 350px;
+    min-width: 0;
+}
+
+.label-1, .label-2 {
+    bottom: 40px;
+    left: 29px;
+}
+
+.contact-info {
+    width: 576px;
+}
+
+.contact-info a{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 576px) {
+    .card-main img {
+        max-width: 400px;
+        height: 225px;
+    }
+    
+    .contact-info {
+        width: 400px;
+    }
+}
+
+
