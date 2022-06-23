@@ -77,8 +77,12 @@ main section h2 {
     text-align: center;
 }
 
-main section figure:hover {
+main section figure {
     opacity: 70%;
+}
+
+main section figure:hover {
+    opacity: 100%;
 }
 
 .about-me p {
