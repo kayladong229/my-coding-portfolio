@@ -107,11 +107,11 @@ main section figure:hover {
     color: black;
 }
 
-.card-1, .card-2 {
+.card-1, .card-2, .card-3 {
     position: relative;
 }
 
-.card-1 img, .card-2 img {
+.card-1 img, .card-2 img, .card-3 img {
     height: 271px;
     width: 362px;
     border: 3px solid red;
@@ -126,7 +126,13 @@ main section figure:hover {
     color: black;
 }
 
-.label-1 {
+.label-3 {
+    position: absolute;
+    bottom: -610px;
+    color: black;
+}
+
+.label-1, .label-3 {
     left: 29px;
 }
 
@@ -134,15 +140,14 @@ main section figure:hover {
     left: 448px;
 }
 
-h3, .label-main, .label-1, .label-2 {
+h3, .label-main, .label-1, .label-2, .label-3 {
     background-color: var(--label-color);
 }
 
 .contact-info a {
     margin: 3px 0;
-    display: block;
-    width: 50%;
     float: left;
+    width: 33.33%;
     text-align: center;
 }
 
